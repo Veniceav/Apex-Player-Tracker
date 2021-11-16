@@ -1,0 +1,364 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+
+.container {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+    display: flex;
+    background-image: linear-gradient(to right, #242126, black);
+    color: white;
+    border: 1px solid black;
+    width: 100%;
+}
+
+.playerContainer {
+    background-image: linear-gradient(to bottom left, #242126, black);
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    border-right: 1px solid rgba(219, 219, 219, .1);
+    border-radius: 12px;
+    box-shadow: 1px 1px 10px black;
+}
+
+#search {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 150px;
+    height: 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 12px;
+    background-color: transparent;
+    box-shadow: 0px 4px 8px black;
+    color: grey;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.6s ease-in-out;
+}
+
+#search:focus {
+    width: 350px;
+    outline: none;
+}
+
+#search-icon {
+    position: relative;
+    top: 3px;
+    right: 35px;
+    height: 20px;
+    width: 20px;
+    opacity: 0.6;
+}
+
+#search-icon:hover {
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.playerInfo {
+    margin-top: 260px;
+}
+
+.player img {
+    height: 200px;
+    width: 200px;
+    border: 1px solid rgba(60, 57, 68, .1);
+    border-radius: 50%;
+    position: relative;
+    bottom: 80px;
+    right: 10px;
+    box-shadow: 0px 5px 8px black;
+}
+
+.player {
+    margin-left: 35px;
+}
+
+#playerName {
+    font-size: 50px;
+    opacity: 0.2;
+    position: relative;
+    bottom: 155px;
+    right: 10px;
+}
+
+#playerLevel {
+    font-size: 22px;
+    opacity: 0.15;
+    position: relative;
+    bottom: 155px;
+    right: 10px;
+}
+
+.highlights {
+    opacity: 0.2;
+    line-height: 40px;
+    margin-top: 100px;
+    margin-bottom: 253px;
+}
+
+.logo img {
+    height: 200px;
+    margin-bottom: 40px;
+    width: fit-content;
+}
+
+.statContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1300px;
+}
+
+.firstRow {
+    display: flex;
+    height: 20%;
+    width: 1200px;
+    margin: 50px 45px;
+}
+
+.ranked {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    width: 575px;
+    border: 1px solid rgba(60, 57, 68, .3);
+    border-radius: 12px;
+    box-shadow: 0px 3px 11px black;
+}
+
+.ranked h2,
+.ranked h3 {
+    margin-left: 15px;
+    opacity: 0.7;
+}
+
+.ranked h4 {
+    margin-top: 10px;
+    margin-left: 15px;
+    opacity: 0.4;
+}
+
+
+.topLegend {
+    background-color: transparent;
+    width: 575px;
+    border: 1px solid rgba(60, 57, 68, .3);
+    border-radius: 12px;
+    box-shadow: 0px 3px 11px black;
+}
+
+.ranked img {
+    position: relative;
+    left: 71%;
+    bottom: 175px;
+    height: 135px;
+    width: 135px;
+    margin-right: 15px;
+    border: 1px solid rgba(60, 57, 68, .3);
+    border-radius: 12px;
+    box-shadow: 0px 3px 11px black;
+    opacity: 0.9;
+}
+
+.topLegend h3,
+.topLegend h2 {
+    margin-top: 10px;
+    margin-left: 15px;
+    opacity: 0.5;
+}
+
+.topLegend p {
+    font-size: 20px;
+    opacity: 0.5;
+    margin-left: 15px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.topLegend h3 {
+    line-height: 30px;
+    opacity: 0.5;
+}
+
+.legendIcon img {
+    position: relative;
+    left: 71%;
+    bottom: 235px;
+    height: 250px;
+    width: 160px;
+    border: 1px solid black;
+    border-radius: 12px;
+    object-position: 0px -5px;
+    object-fit: cover;
+
+}
+
+.secondRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 20%;
+    width: 1200px;
+    margin: 50px 45px;
+}
+
+.wl {
+    background-color: transparent;
+    text-align: center;
+    width: 575px;
+    height: 100%;
+    border: 1px solid rgba(60, 57, 68, .3);
+    border-radius: 12px;
+    margin-right: 15px;
+    box-shadow: 0 0 150px black inset;
+    box-shadow: 0px 3px 11px black;
+    line-height: 35px;
+}
+
+.wl h3 {
+    margin-top: 10px;
+}
+
+.kd {
+    text-align: center;
+    background-color: transparent;
+    width: 575px;
+    height: 100%;
+    border: 1px solid rgba(60, 57, 68, .3);
+    border-radius: 12px;
+    box-shadow: 0px 3px 11px black;
+    line-height: 35px;
+}
+
+.kd h3 {
+    margin-top: 10px;
+}
+
+.dmg {
+    background-color: transparent;
+    text-align: center;
+    width: 32.5%;
+    height: 100%;
+    border: 1px solid rgba(60, 57, 68, .3);
+    border-radius: 12px;
+    box-shadow: 0px 3px 11px black;
+}
+
+.recentMatch {
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    height: 20%;
+    width: 1200px;
+    margin: 50px 45px;
+    border: 1px solid rgba(60, 57, 68, .3);
+    border-radius: 12px;
+    box-shadow: 0px 3px 11px black;
+}
+
+.title {
+    position: relative;
+    bottom: 47px;
+    margin-left: 15px;
+    width: fit-content;
+
+}
+
+.recentCharacter {
+    margin-left: 15px;
+    position: relative;
+    top: 55px;
+}
+
+.placementContainer {
+    display: flex;
+    position: relative;
+    left: 45%;
+    bottom: 40%;
+}
+
+#placement {
+    font-size: 20px;
+}
+
+.kak {
+    position: relative;
+    bottom: 0;
+    margin-left: 45%;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    letter-spacing: 10px;
+    width: 100px;
+}
+
+.kakText {
+    letter-spacing: 1px;
+    position: relative;
+    top: 35px;
+    right: 130px;
+
+}
+
+.recentdmg {
+    position: relative;
+    bottom: 31px;
+    left: 80%;
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+}
+
+.recentdmg h4 {
+    position: relative;
+    top: 30px;
+    right: 70px;
+}
+
+.top3 {
+    background-color: #2E2C34;
+    margin: 50px 45px;
+    padding: 0;
+    line-height: 30px;
+    height: 50%;
+    width: 15%;
+    border: 1px solid rgba(60, 57, 68, .3);
+    border-radius: 12px;
+}
+
+.top3 h3 {
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+
+.top3 p {
+    margin-left: 15px;
+}

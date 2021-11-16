@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Legends Player Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="playerContainer">
+
+            <div class=search-box>
+                <input type="search" id="search"></input>
+                <img src="Images\NicePng_magnifying-glass-png-no_659698.png" id="search-icon">
+            </div>
+            <!--Left Independent Column-->
+            <div class=playerInfo>
+                <!--Avatar, PLayerName, and Top Stats Container-->
+                <div class="player">
+                    <!--playerName-->
+                    <h2 id=playerName>SVYSLF</h2>
+                    <!--playerLVL-->
+                    <h3 id=playerLevel>663</h3>
+                    <!--Avatar/Pic Goes here!!!! -->
+                    <img src="Images\adrian-kirkegaard-nCrrvuoyftA-unsplash.jpg" alt="Apex symbol">
+
+                </div>
+
+                <div class="highlights">
+                    <!--Total Kills, damage, and damage or highest rank-->
+                    <h3>Kills: <span class="overallKills">10485</span></h3>
+                    <h3>Wins: <span class="overallWins">667</span></h3>
+                    <h3>Damage: <span class="overallDamage">4,680,712</span></h3>
+
+
+                </div>
+            </div>
+            <div class="logo">
+                <img src="Images\apex-legends-logo-png-transparent.png" alt="Apex Legends Logo">
+            </div>
+        </div>
+
+        <div class="statContainer">
+            <div class="firstRow">
+                <!--Ranked placement and Top Legend-->
+                <div class="ranked">
+                    <h4>Current Rank:</h4>
+                    <h3 class="playerRank">Diamond II</h3><br><br>
+                    <h4>Total RP:</h4>
+                    <h2 id="totalRp">7360</h2><br>
+                    <br>
+
+                    <h2><span id="rpneeded">240</span> Rp to <span id="nextRank">Diamond I</span></h2>
+                    <div class="rankBadge">
+                        <img src="Images\Ranked_Tier5_Diamond.png" alt="Diamond">
+                    </div>
+
+
+                </div>
+                <div class="topLegend">
+                    <h2 class="character">Wraith</h2><br>
+                    <p id="legendDescription">Interdimensional Skirmisher</p>
+                    <br><br>
+                    <h3>Kills:<span class="legendKills"> 3127</span></h3>
+                    <h3>Wins:<span class="legendWins"> 237</span></h3>
+                    <h3>Damage:<span class="legendDamage"> 1,564,555</span></h3>
+                    <div class="legendIcon">
+                        <img src="Images\banner.jpg" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="secondRow">
+                <!--Win/Loss, K/D, and Damage Stats-->
+                <div class="wl">
+                    <h3>Win/Loss</h3><span class="wlpercentage">0.09/9%</span>
+                    <h4>Matches Played:</h4><span class="matchesPlayed"> 6.05k</span></h4>
+                    <h4>Matches Won:</h4><span class="matchesWon"> 667</span></h4>
+
+                </div>
+                <div class="kd">
+                    <h3>Kill/Death</h3><span class="kdratio">2.57 </span>
+                    <h4>Kills:</h4><span class="overallKills"> 10485</span>
+                    <h4>Deaths:</h4><span class="deaths"> 4066</span>
+                </div>
+               </div>
+
+                <!--Recent Match(Last Match Played)-->
+                <div class="recentMatch">
+                    <h3 class="title">Recent Match:</h3>
+                    <h3 class="recentCharacter">Wattson</h3>
+                    <div class="placementContainer">
+                            <h4 id="placement">2nd Place</h>
+                    </div>
+                    <div class="kak">
+                        <h3 id="recentKills">7<span>/</span></h3>
+                        <h3 id="recentAssists">3<span>/</span></h3>
+                        <h3 id="recentknocks">9</h3>
+                        <br>
+                        <h4 class=kakText>Kills/<span>Assists/</span><span>knocks</span></h4>
+                    </div>
+                    <div class="recentdmg">
+                        <h3 id= "recentdmg">2783</h3>
+                        <h4>Damage</h4>
+                    </div>
+
+                </div>
+        </div>
+
+        <div class="top3">
+            <!--Top 3 Legends-->
+            <div class="legends">
+                <div class="legend">
+                    <h3 class="character">Wraith</h3>
+                    <p>Kills:<span class="legendKills"></span></p>
+                    <p>Wins:<span class="legendWins"></span></p>
+                    <p>Damage:<span class="legendDamage"></span></p>
+                </div>
+                <br>
+                <div class="legend">
+                    <h3 class="character">Wattson</h3>
+                    <p>Kills:<span class="legendKills"></span></p>
+                    <p>Wins:<span class="legendWins"></span></p>
+                    <p>Damage:<span class="legendDamage"></span></p>
+                </div>
+                <br>
+                <div class="legend">
+                    <h3 class="character">Valkyrie</h3>
+                    <p>Kills:<span class="legendKills"></span></p>
+                    <p>Wins:<span class="legendWins"></span></p>
+                    <p>Damage:<span class="legendDamage"></span></p>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
